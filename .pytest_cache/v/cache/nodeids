@@ -1,7 +1,0 @@
-[
-  "test/test_app.py::Testapp::test_chrome",
-  "test/test_app.py::Testapp::test_chrome_headless",
-  "test/test_app.py::Testapp::test_facebook",
-  "test/test_app.py::Testapp::test_google",
-  "test/test_app.py::Testapp::test_safari"
-]

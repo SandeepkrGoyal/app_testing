@@ -29,7 +29,7 @@ for i in "$@"; do
         --smoke) pytest test -s -v -m smoke --html=html_reports/reports.html --log-file logs/"$(date '+%F_%H:%M:%S')".log
             break
             ;;
-        --sanity) pytest test -s -v -m sanity --html=html_reports/reports.html --log-file logs/"$(date '+%F_%H:%M:%S')".log
+        --sanity) pytest test -s -v -m sanity --html=html_reports/reports.html
             break
             ;;
         --apitest) pytest app/test -m apitest
