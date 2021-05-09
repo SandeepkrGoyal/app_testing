@@ -1,0 +1,30 @@
+name: Creating CI pipeline
+
+on:
+  push:
+    branches-ignore: [develop]
+  pull_request:
+    branches: [develop]
+
+jobs:
+  build:
+    name: Run selenium code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up python version
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+          architecture: 'x64'
+      - name: Get chrome browser
+        uses: browser-actions/setup-chrome@latest
+      - name: Install packages
+        run: pip install -r requirements.txt
+      - name: Give execution permission to trigger
+        run: chmod +x execute.sh
+      - name: Execute trigger
+        run: ./execute.sh --regression
+        env:
+          DEFAULT_BRANCH: develop
