@@ -1,0 +1,6 @@
+.DS_Store
+app_testing/.idea/
+app_testing/html_reports/
+app_testing/logs/
+test/__pycache__/
+utility/__pycache__/
