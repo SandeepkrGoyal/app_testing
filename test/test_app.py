@@ -10,7 +10,7 @@ class Testapp(Driverutility):
         driver.get("https://www.amazon.in/")
         get_title = driver.title
         print(get_title)
-        assert get_title == "YouTube", "Title does not match"
+        assert get_title == "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in", "Title does not match"
         super().tear_down(driver)
 
     @pytest.mark.regression
@@ -20,7 +20,7 @@ class Testapp(Driverutility):
         driver.get("https://www.youtube.com/")
         get_title = driver.title
         print(get_title)
-        assert get_title == "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in", "Title does not match"
+        assert get_title == "YouTube", "Title does not match"
         super().tear_down(driver)
 
     @pytest.mark.debug
