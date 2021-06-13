@@ -4,5 +4,9 @@
     "driver_path_linux": "drivers/linux/chromedriver",
     "driver_path_windows": "drivers/windows/chromedriver",
     "headless_status": false
+  },
+  "site": {
+    "site_data1": "http://automationpractice.com/index.php",
+    "site_data2": "https://synup.com/"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "links": {
+    "who-we-serve": "//li[normalize-space()='Who we serve']",
+    "products": "//li[normalize-space()='Products']",
+    "resources": "//li[normalize-space()='Resources']",
+    "about": "//li[normalize-space()='About']",
+    "support": "//a[normalize-space()='Support']",
+    "enterprise": "//li[normalize-space()='Enterprise']",
+    "agency_partner": "//li[normalize-space()='Agency Partners']",
+    "smb": "//li[normalize-space()='SMB']",
+    "decline_cookie": "//*[@id='hs-en-cookie-confirmation-buttons-area']/a[2]"
+  },
+  "buttons": {
+    "letstalk": "//a[@class='btn btn_primary btn_arrow mt-4 mt-md-5']"
+  }
+}

@@ -39,6 +39,18 @@ class Baseutility:
                 with open(json_config_path, "r") as jsonobj:
                     jsondata = json.load(jsonobj)
                     json_obj = jsondata.get(parent_datatype).get(child_datatype)
+            if config_type == "web_config":
+                json_config_path = config_path + "webconfig.json"
+                # configurations/webconfig.json
+                with open(json_config_path, "r") as jsonobj:
+                    jsondata = json.load(jsonobj)
+                    json_obj = jsondata.get(parent_datatype).get(child_datatype)
+            if config_type == "web_data":
+                json_config_path = config_path + "webdata.json"
+                # configurations/webdata.json
+                with open(json_config_path, "r") as jsonobj:
+                    jsondata = json.load(jsonobj)
+                    json_obj = jsondata.get(parent_datatype).get(child_datatype)
             return json_obj
         except KeyError as e:
             self.log_error(e)

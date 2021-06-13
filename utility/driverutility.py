@@ -1,4 +1,4 @@
-import platform  # To check for thhe current platform
+import platform  # To check for the current platform
 import traceback
 
 from selenium import webdriver
